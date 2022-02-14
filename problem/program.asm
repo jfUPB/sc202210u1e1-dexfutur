@@ -15,18 +15,30 @@
    M=D
    @24576
    D=M
-   @25
-   D;JNE
+   @70
+   D=D-A
+   @27
+   D;JEQ
+
    @2
    D=M
    @24576
    D=D-A
    @4
    D;JGT
+
    @2
    A=M
    M=-1
    @2
    M=M+1
    @12
+   0;JMP
+
+   @24576
+   D=M
+   @67
+   D=D-A
+   D;JGT
+
    0;JMP
